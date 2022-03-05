@@ -9,6 +9,7 @@ class Counter extends Component {
         console.log(this.props);
         return (
             <div>
+                <h5>Counter #{this.props.id}</h5>
                 <span className={this.badgeClasses()}>{this.state.value === 0 ? 'Zero' : this.state.value}</span>
                 <button onClick={this.handleIncrement} className="m-2 btn btn-sm btn-secondary">Increment</button>
                 <button onClick={this.handleDecrement} className="m-2 btn btn-sm btn-secondary" disabled={this.state.value === 0 ? true : null}>Decrement</button>
