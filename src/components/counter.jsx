@@ -13,7 +13,7 @@ class Counter extends Component {
                 <span className={this.badgeClasses()}>{this.state.value === 0 ? 'Zero' : this.state.value}</span>
                 <button onClick={this.handleIncrement} className="m-2 btn btn-sm btn-secondary">Increment</button>
                 <button onClick={this.handleDecrement} className="m-2 btn btn-sm btn-secondary" disabled={this.state.value === 0 ? true : null}>Decrement</button>
-                <button onClick={this.deleteProduct} className="m-2 btn btn-sm btn-danger">Delete</button>
+                <button onClick={() => this.props.onDelete(this.props.id)} className="m-2 btn btn-sm btn-danger">Delete</button>
             </div>
         );
     }
@@ -27,10 +27,6 @@ class Counter extends Component {
         this.setState({
             value: this.state.value - 1
         });
-    }
-
-    deleteProduct = () => {
-        console.log('Delete');
     }
 
     badgeClasses() {
