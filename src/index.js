@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'mdb-ui-kit/css/mdb.min.css';
 import Counter from "./components/counter";
 
 ReactDOM.render(
