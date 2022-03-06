@@ -20,13 +20,13 @@ class App extends Component {
         )
     }
 
-    calculateAll() {
-        let all = 0;
-        this.state.counters.map(c => {
-            all += counter.value
-        });
-        return all;
-    }
+    // calculateAll() {
+    //     let all = 0;
+    //     this.state.counters.map(c => {
+    //         all += counter.value
+    //     });
+    //     return all;
+    // }
 }
 
 export default App;
