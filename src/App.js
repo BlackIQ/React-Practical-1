@@ -8,7 +8,7 @@ class App extends Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar all="10" />
+                <Navbar all="" />
                 <div className="container-fluid">
                     <Counters
                         onReset={this.handleReset}
